@@ -137,4 +137,142 @@
 
 # End of ex6
 
+<<<<<<< Updated upstream
 # Beginning Of Ex7 - More Printing
+=======
+# Beginning of Ex7 - More Printing
+
+# puts "Mary had a little lamb."
+# puts "Its fleece was white as #{'snow'}."
+# puts "And everywhere that Mary went."
+# puts "." * 10 # What does this do??
+
+# end1 = "C"
+# end2 = "h"
+# end3 = "e"
+# end4 = "e"
+# end5 = "s"
+# end6 = "e"
+# end7 = "B"
+# end8 = "u"
+# end9 = "r"
+# end10 = "g"
+# end11 = "e"
+# end12 = "r"
+
+# Watch that print vs. puts on this line, what's it do?
+# print end1 + end2 + end3 + end4 + end5 + end6
+# puts end7 + end8 + end9 + end10 + end11 + end12
+
+# End of Ex7
+
+# Beginning Of Ex8 - Printing, Printing
+
+# formatter = "%{first} %{second} %{third} %{fourth}"
+
+#  puts formatter % {first: 1, second: 2, third: 3, fourth: 4}
+#  puts formatter % {first: "one", second: "two", third: "three", fourth: "four"}
+#  puts formatter % {first: true, second: false, third: true, fourth: false}
+#  puts formatter % {first: formatter, second: formatter, third: formatter, fourth: formatter}
+
+#  puts formatter % {
+#    first: "I had this thing.",
+#    second: "That you could type up right.",
+#    third: "But it didn't sing.",
+#    fourth: "So I said goodnight."
+#  }
+# End of Ex8
+
+# Beginning of Ex9 - Printing, Printing, Printing
+
+#  days = "Mon Tue Wed Thu Fri Sat Sun"
+#  months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+
+#    puts "Here are the days of the week: #{days}"
+#    puts "Here are 8 months of the year: #{months}"
+
+#    puts %q{
+#      There's something going on here.
+#      With the three double-quotes.
+#      We'll be able to type as much as we like.
+#      Even 4 lines if we want, or 5, or 6.
+#    }
+
+# End of Ex9
+
+# Beginning of Ex10 - What Was That?
+# \n = Backslash n - Creates new line. Must be like \nFeb for it to work. Prior to text entry only.
+# This \ (backslash) character encodes difficult-to-type characters into a string.
+# There are various "escape sequences" available for different characters you might want to use.
+# We'll try a few of these sequences so you can see what I mean.
+# An important escape sequence is to escape a single-quote ' or double-quote ".
+# Imagine you have a string that uses double-quotes and you want to put a double-quote inside the string.
+# If you write "I "understand" joe." then Ruby will get confused because it will think the " around "understand"
+# actually ends the string. You need a way to tell Ruby that the " inside the string isn't a real double-quote.
+
+# To solve this problem you escape double-quotes and single-quotes so Ruby knows to include in the string. Here's an example:
+
+#   "I am 6'2\" tall."  # escape double-quote inside string
+#   'I am 6\'2" tall.'  # escape single-quote inside string
+
+#  tabby_cat = "\t I'm tabbed in."
+#  persian_cat = "I'm split\non a line"
+#  backslash_cat = "I'm \\ a \\ cat."
+
+#  fat_cat = """
+#  I'll do a list:
+#  \t* Cat Food
+#  \t* Fishies
+#  \t* Catnip\n\t* Grass
+#  """
+
+#  puts tabby_cat
+#  puts persian_cat
+#  puts backslash_cat
+#  puts fat_cat
+
+################# - Epic Note section
+#\t = backslash t - Tabs into the "document."
+# \\ \\ = splits text between only one set of backslashs.
+# """ = Quotation of everything inside of the brackets, used for word variables, or "strings."
+# \a - ASCII bell (BEL) -
+# \b - ASCII backspace (BS) - removes formatting from string back one space.
+# \f - ASCII formfeed (FF) -
+# \n - ASCII Linefeed (LF) - New line
+# \r - ASCII Carriage Return (CR) -
+# \t - ASCII Horizontal Tab (Tab) - Tab across
+# \uxxxx - Character with 16-bit hex value xxxx (unicode only)
+# \v - ASCII vertical tab (VT) - tabs down one line.
+# \ooo - Character with octal value ooo
+# \xhh - Character with hex value hh
+##################
+
+# End of Ex10
+
+#Test of Ex10
+
+#  slow_car = """
+#  I'll do a list:
+#  \t* KIA
+#  \a* Chevy
+#  \f* Pontiac
+#  \v* Ford
+#  \b* Silly Chinese
+#  """
+#  puts slow_car
+
+# End of Text Ex10
+
+# Beginning of Ex11 - Asking Questions
+
+  print "How old are you? "
+  age = gets.chomp
+  print "How tall are you? "
+  height = gets.chomp
+  print "How much do you weigh? "
+  weight = gets.chomp
+
+  puts "So, you're #{age} old, #{height} tall and weigh #{weight}."
+
+#  gets.chomp = It pulls the value for the listed variable from user input. Aka Line 265 - 266.
+>>>>>>> Stashed changes
