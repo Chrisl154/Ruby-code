@@ -136,3 +136,5 @@
   # puts w + e
 
 # End of ex6
+
+# Beginning Of Ex7 - More Printing
