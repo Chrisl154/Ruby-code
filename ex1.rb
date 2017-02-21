@@ -137,9 +137,6 @@
 
 # End of ex6
 
-<<<<<<< Updated upstream
-# Beginning Of Ex7 - More Printing
-=======
 # Beginning of Ex7 - More Printing
 
 # puts "Mary had a little lamb."
@@ -275,4 +272,3 @@
   puts "So, you're #{age} old, #{height} tall and weigh #{weight}."
 
 #  gets.chomp = It pulls the value for the listed variable from user input. Aka Line 265 - 266.
->>>>>>> Stashed changes
