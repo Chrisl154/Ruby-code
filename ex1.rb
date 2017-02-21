@@ -302,3 +302,21 @@
 # End of Ex12
 
 # Beginning of Ex13 - Parameters, Unpacking, Variables
+
+
+first, second, third = ARGV
+
+  puts "Your first variable is: #{first}"
+  puts "Your second variable is: #{second}"
+  puts "Your third variable is: #{third}"
+
+  print "Whats your favorite color? "
+  color = $stdin.gets.chomp
+
+  print "So your favorite color is #{color}. Right? "
+  right = $stdin.gets.chomp
+  if right == yes
+    then puts "Great!"
+  else
+    then puts "Whoops, We had a problem there. Re-Run me!"
+  end
