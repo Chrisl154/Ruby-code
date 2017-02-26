@@ -364,6 +364,7 @@
   puts "Here's your file #{filename}:"
   print txt.read
 
+#This asks the person what file they want to open. 
   print "Type the filename again: "
   file_again = $stdin.gets.chomp
 
