@@ -357,17 +357,105 @@
 
 # Beginning Ex15
 
+#  filename = ARGV.first
+
+#  txt = open(filename)
+
+#  puts "Here's your file #{filename}:"
+#  print txt.read
+
+#This asks the person what file they want to open.
+#  print "Type the filename again: "
+#  file_again = $stdin.gets.chomp
+#  txt.close
+
+#  txt_again = open(file_again)
+
+#  print txt_again.read
+
+#  puts "\nHope that helped!"
+#  puts "Have a good day!"
+
+#  txt_again.close
+# End of ex15
+
+#This is a test of some extra work
+#  print "Type the filename you would like to open: "
+#filename = gets.chomp
+#txt = open(filename)
+
+#puts "Here is your file #{filename}:"
+#  print txt.read
+
+# puts "\n Would you like anything else?"
+# print "If so, say Yes, otherwise say no.: "
+#  inputAnswer = gets.chomp
+# if inputAnswer == 'yes'
+#  print "What other file would you like to open?: "
+#  inputFilename2 = gets.chomp
+#  txt2 = open(inputFilename2)
+#  puts "Here is your file #{inputFilename2}"
+#  print txt2.read
+#else
+#    abort('Thank you, come again.')
+#end
+
+#puts "\n Would you like anything else?"
+#print "if so, say yes, otherwise say no.: "
+#  inputAnswer2 = gets.chomp
+#if inputAnswer2 == 'yes'
+#  puts "To bad, I am feeling kind of tired. Bye!"
+#else
+#    abort('Thank you, come again.')
+#end
+
+
+#Beginning of Ex16 - Reading and Writing files
+#close -- Closes the file. Like File->Save.. in your editor.
+#read -- Reads the contents of the file. You can assign the result to a variable.
+#readline -- Reads just one line of a text file.
+#truncate -- Empties the file. Watch out if you care about the file.
+#write('stuff') -- Writes "stuff" to the file.
+
   filename = ARGV.first
 
-  txt = open(filename)
+  puts "We're going to erase #{filename}"
+  puts "If you don't want that, hit CTRL-C (^C)."
+  puts "If you do want that, hit RETURN."
 
-  puts "Here's your file #{filename}:"
+  $stdin.gets
+
+  puts "Opening the file..."
+  target = open(filename, 'w')
+
+  puts "Truncating the file. Goodbye!"
+  target.truncate(0)
+
+  puts "Now I'm going to ask you for three lines."
+
+  print "Line 1: "
+  line1 = $stdin.gets.chomp
+  print "Line 2: "
+  line2 = $stdin.gets.chomp
+  print "Line 3: "
+  line3 = $stdin.gets.chomp
+
+  puts "I am going to write these to the file."
+
+  target.write(line1)
+  target.write("\n")
+  target.write(line2)
+  target.write("\n")
+  target.write(line3)
+  target.write("\n")
+
+  puts "And finally, we close it."
+  target.close
+
+  puts "Now lets see if it wrote correctly."
+  print "Whats the file name again?: "
+  filename_again = $stdin.gets.chomp
+  puts "That's right, lets open #{filename_again}"
+  txt = open(filename_again)
   print txt.read
-
-#This asks the person what file they want to open. 
-  print "Type the filename again: "
-  file_again = $stdin.gets.chomp
-
-  txt_again = open(file_again)
-
-  print txt_again.read
+  
