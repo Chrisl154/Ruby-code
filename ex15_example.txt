@@ -1,3 +1,3 @@
-My name is Christian, and this is my first written text from ruby to a text document.
-I am hoping this works without a hitch. If so, then atleast I understand the basics of what I am doing here.
-Heres to hoping I know the basics.
+My name is Christian Massie, And this is my first program that saves to a document.
+I have a wonderful wife in my life who supports me in my, well, interesting endeavors.
+Here is to hoping this worked. Her favorite minion as well, is bob. gGo Bob. #minionlife.

@@ -453,9 +453,12 @@
   target.close
 
   puts "Now lets see if it wrote correctly."
-  print "Whats the file name again?: "
-  filename_again = $stdin.gets.chomp
-  puts "That's right, lets open #{filename_again}"
-  txt = open(filename_again)
-  print txt.read
-  
+    target = open(filename)
+  print "The file was #{filename} yes?: "
+inputAnswer = $stdin.gets.chomp
+if inputAnswer == 'yes'
+  puts "That's right, lets open #{filename}."
+    print target.read
+else
+  abort ("Thank you! If you did not mean to end this, say 'yes' next time.")
+end
