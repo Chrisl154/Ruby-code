@@ -417,48 +417,48 @@
 #truncate -- Empties the file. Watch out if you care about the file.
 #write('stuff') -- Writes "stuff" to the file.
 
-  filename = ARGV.first
+#  filename = ARGV.first
 
-  puts "We're going to erase #{filename}"
-  puts "If you don't want that, hit CTRL-C (^C)."
-  puts "If you do want that, hit RETURN."
+#  puts "We're going to erase #{filename}"
+#  puts "If you don't want that, hit CTRL-C (^C)."
+#  puts "If you do want that, hit RETURN."
 
-  $stdin.gets
+#  $stdin.gets
 
-  puts "Opening the file..."
-  target = open(filename, 'w')
+#  puts "Opening the file..."
+#  target = open(filename, 'w')
 
-  puts "Truncating the file. Goodbye!"
-  target.truncate(0)
+#  puts "Truncating the file. Goodbye!"
+#  target.truncate(0)
 
-  puts "Now I'm going to ask you for three lines."
+#  puts "Now I'm going to ask you for three lines."
 
-  print "Line 1: "
-  line1 = $stdin.gets.chomp
-  print "Line 2: "
-  line2 = $stdin.gets.chomp
-  print "Line 3: "
-  line3 = $stdin.gets.chomp
+#  print "Line 1: "
+#  line1 = $stdin.gets.chomp
+#  print "Line 2: "
+#  line2 = $stdin.gets.chomp
+#  print "Line 3: "
+#  line3 = $stdin.gets.chomp
 
-  puts "I am going to write these to the file."
+#  puts "I am going to write these to the file."
 
-  target.write(line1)
-  target.write("\n")
-  target.write(line2)
-  target.write("\n")
-  target.write(line3)
-  target.write("\n")
+#  target.write(line1)
+#  target.write("\n")
+#  target.write(line2)
+#  target.write("\n")
+#  target.write(line3)
+#  target.write("\n")
 
-  puts "And finally, we close it."
-  target.close
+#  puts "And finally, we close it."
+#  target.close
 
-  puts "Now lets see if it wrote correctly."
-    target = open(filename)
-  print "The file was #{filename} yes?: "
-inputAnswer = $stdin.gets.chomp
-if inputAnswer == 'yes'
-  puts "That's right, lets open #{filename}."
-    print target.read
-else
-  abort ("Thank you! If you did not mean to end this, say 'yes' next time.")
-end
+#  puts "Now lets see if it wrote correctly."
+#    target = open(filename)
+#  print "The file was #{filename} yes?: "
+#inputAnswer = $stdin.gets.chomp
+#if inputAnswer == 'yes'
+#  puts "That's right, lets open #{filename}."
+#    print target.read
+#else
+#  abort ("Thank you! If you did not mean to end this, say 'yes' next time.")
+#end
