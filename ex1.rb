@@ -462,3 +462,60 @@
 #else
 #  abort ("Thank you! If you did not mean to end this, say 'yes' next time.")
 #end
+  #End of Ex16
+
+#Beginning of Ex17 - More files
+
+#  from_file, to_file = ARGV
+
+#puts "Copying from #{from_file} to #{to_file}"
+
+# we could do these two on one line, how?
+#in_file = open(from_file)
+#indata = in_file.read
+
+#puts "The input file is #{indata.length} bytes long."
+
+#puts "Does the output file exist? #{File.exist?(to_file)}"
+#puts "Ready, hit RETURN to continue, CTRL-C to abort."
+#  $stdin.gets
+#out_file = open(to_file, 'w')
+#out_file.write(indata)
+
+#puts "Alright, all done."
+
+#out_file.close
+#in_file.close
+# End of Ex17 (Need to come back to lesson to understand whats happening)
+
+#Ex18 : Names, Variables, Code, Functions
+
+#Functions do three things :
+# They name pieces of code the way variables name strings and numbers.
+# They take arguments the way your scripts take ARGV.
+# Using 1 and 2 they let you make your own "mini-scripts" or "tiny commands."
+# You can create a function by using the word def in Ruby.
+
+# Big title, right? I am about to introduce you to the function!
+# Dum dum dah! Every programmer will go on and on about functions and all the
+# different ideas about how they work and what they do,
+# but I will give you the simplest explanation you can use right now.
+
+# Functions do three things:
+
+# They name pieces of code the way variables name strings and numbers.
+# They take arguments the way your scripts take ARGV.
+# Using 1 and 2 they let you make your own "mini-scripts" or "tiny commands."
+
+# You can create a function by using the word 'def' in Ruby.
+# I'm going to have you make four different functions that work like your scripts,
+# and I'll then show you how each one is related.
+
+# Beginning Of The code
+
+# this one is like your scipts with ARGV
+
+def print_two(*args)
+  arg1, arg2 = args
+  puts "arg1: #{arg1}, arg2: #{arg2}"
+end
