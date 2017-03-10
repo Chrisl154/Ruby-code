@@ -519,3 +519,38 @@ def print_two(*args)
   arg1, arg2 = args
   puts "arg1: #{arg1}, arg2: #{arg2}"
 end
+
+# ok, that *args is actually pointless, we can judt do this
+def print_two_again(arg1, arg2)
+  puts "arg1: #{arg1}, arg2: #{arg2}"
+end
+
+# this just takes one argument
+def print_one(arg1)
+  puts "arg1: #{arg1}"
+end
+
+# this one takes no arguments
+def print_none()
+  puts "I got nothin'."
+end
+
+print_two("Christian","Massie")
+print_two_again("Christian", "Massie")
+print_one("First!")
+print_none()
+
+# End of Coding section
+# 1: First we tell ruby we want to make a function using 'def' for "define"
+# 2: On the same line as 'def' we give the function a name. In this case we just called it "print_two" but it could
+# also be "peanuts". It doesn't matter, except that your function should have a short name that says what it does.
+# 3: Then we tell it we want *argvs (asterisk args) which is a lot like your 'argv' parameter but for functions.
+# 4: Then we end this line with a new line (enter key), and start identing.
+# 5: After the newline all the lines up to the 'end' line at the bottom will become attached to this name,
+# print_two. Our first idented line is one that unpacks the arguments the same as with your scripts.
+# 6: To demonstrate how it works we print these arguments out, just like we would in a script.
+
+# The problem with print_two is that its not the easiest way to make a function. In Ruby we can skip the whole
+# unpacking arguments and just use the names we want right inside the (). Thats what print_two_again does.
+# After that you have an example of how you make a function that takes one argument in print_one.
+# Finally you have a function that has no arguments in print_none.
