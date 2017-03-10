@@ -544,7 +544,7 @@ print_none()
 # 1: First we tell ruby we want to make a function using 'def' for "define"
 # 2: On the same line as 'def' we give the function a name. In this case we just called it "print_two" but it could
 # also be "peanuts". It doesn't matter, except that your function should have a short name that says what it does.
-# 3: Then we tell it we want *argvs (asterisk args) which is a lot like your 'argv' parameter but for functions.
+# 3: Then we tell it we want *args (asterisk args) which is a lot like your 'argv' parameter but for functions.
 # 4: Then we end this line with a new line (enter key), and start identing.
 # 5: After the newline all the lines up to the 'end' line at the bottom will become attached to this name,
 # print_two. Our first idented line is one that unpacks the arguments the same as with your scripts.
@@ -577,3 +577,4 @@ print_none()
 # Finally, repeat this a few times to yourself:
 
 # "To 'run,' 'call,' or 'use' a function all mean the same thing."
+# A function can start with anything not a number, and can contain letters, numers, and underscores.
