@@ -581,7 +581,8 @@
 
 #End of Ex18
 
-#Beginning Of Ex19
+# Beginning Of Ex19
+
 #def cheese_and_crackers (cheese_count, boxes_of_crackers)
 #  puts "You have #{cheese_count} slices of cheese!"
 #  puts "You have #{boxes_of_crackers} boxes of crackers!"
@@ -603,3 +604,84 @@
 
 #puts "And we can combine the two, variables and math:"
 #cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
+
+# End of Ex19
+
+# Beginning of Ex20
+
+#input_file = ARGV.first
+
+#def print_all(f)
+#  puts f.read
+#end
+
+#def rewind(f)
+#  f.seek(0)
+#end
+
+#def print_a_line(line_count, f)
+#  puts "#{line_count}, #{f.gets.chomp}"
+#end
+
+#current_file = open(input_file)
+
+#puts "First let's print the whole file:\n"
+
+#print_all(current_file)
+
+#puts "Now let's rewind, kind of like a tape."
+
+#rewind(current_file)
+
+#puts "Let's print three lines:"
+
+#current_line = 1
+#print_a_line(current_line, current_file)
+
+#current_line = current_line + 1
+#print_a_line(current_line, current_file)
+
+#current_line = current_line + 1
+#print_a_line(current_line, current_file)
+
+# End Of Ex20
+
+# Beginning Of Ex21 - Functions Can Return something
+
+#def add(a, b)
+#  puts "Adding #{a} + #{b}"
+#  return a + b
+#end
+
+#def subtract (a, b)
+#  puts "Subtracting #{a} - #{b}"
+#  return a - b
+#end
+
+#def multiply (a, b)
+#  puts "Multipling #{a} * #{b}"
+#  return a * b
+#end
+
+#def divide (a, b)
+#  puts "Diving #{a} / #{b}"
+#  return a / b
+#end
+
+#puts "Now, Lets do some math with just functions!"
+
+#age = add(30, 5)
+#height = subtract(78, 4)
+#weight = multiply(90, 2)
+#iq = divide(100,2)
+
+#puts "Age: #{age}, Height: #{height}, Weight: #{weight}, IQ: #{iq}."
+
+# A puzzle for the extra credit, type it in anyway.
+#puts "Here is a puzzle."
+
+#what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+
+#puts "That becomes: #{what}. Can you do it by hand?"
+
+# End of Ex21
